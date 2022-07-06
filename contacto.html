@@ -5,88 +5,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
-    <link rel="icon" href="img/FAQ.jpg">
+    <title>Bitter Chocolaterie</title>
+    <link rel="icon" href="img/favicon.png">
     <meta name="viewport" content=" width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="styles/csssty.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet"  href="styles/csssty.css">
+
+
     
+
 
 
 
 <body>
-    <section class="presentation">
+     
+        <nav class="navbar sticky-top navbar-expand-lg ">
+            <div class="container-fluid">
 
-        <img src="img/Bitter Chocolaterie(1).png" alt="logo">
-        <h2 class="text">May your experience be as wonderful as chocolate 
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="nav-item">
+                        <li><a class="nav-link " aria-current="page" href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                    <ul class="nav-item">
+                        <li><a class="nav-link" href="recomendados.html">Recomendados</a></li>
+                    </ul>
+    
+                    <ul class="nav-item">
+                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+    
+                    </ul>
+    
+    
+                    <ul class="nav-item">
+                        <li><a class="nav-link" href="shop.html">Shop</a></li>
+                    </ul>
+                </ul>
+            </div>
+                <a class="navbar-brand"  href="index.html"> <img src="img/Bitter Chocolaterie(1).png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    </section>
+               
+                <form class="d-flex" role="search">
+                    <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+                   <a  class="carrito" href="#" type="button" ><img src="img/carrito.png" alt="carrito"></a>
+                </form>
 
-     </section>
-    </section>
-    <header>
-        <nav class="navbar">
-            <div class="ref">
-                    <a class="link-item" href="index.html">HOME</a>
-        
-                    <a class="link-item" href="nosotros.html">NOSOTROS</a>
-            
-                    <a class="link-item" href="recomendados.html">RECOMENDADOS</a>
                 
-                    <a class="link-item" href="contacto.html">CONTACTO</a>
-                
-                    <a class="link-item" href="shop.html">SHOP</a>
+               
+          
+            </div>
             </div>
         </nav>
-    </header>
+
+<br>
 
    
-    <section class="for">
-        <h1>Puedes rellenar nuestro formulario de contacto O
+    <section class="rellenar">
+        <h1>   COMUNICATE CON NUESTRO EQUIPO BITTER 
+<br>
+            Puedes rellenar nuestro formulario de contacto O
             <a href="https://api.whatsapp.com/send?phone=+56934615121&text=Hola, Nececito mas informacion!">Envíanos un
                 mensaje de WhatsApp</a></h2></p> 
-<form>
-    <img src="img/contacto.png" alt="">
     
                     
-        <h4>COMUNICATE CON NUESTRO EQUIPO BITTER 
-          </h4>
+<div class="animacion">
+    <img src="img/carta.animacion.webp" alt="animacion">
+</div>
        
 </form>
-    </section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
 
-    <form class="formulario">
-        <h2>FORMULARIO DE CONTACTO</h2>
-        
-        <legend >Ingresa aquí tus datos</legend>
-        <br>
-        <label   for="nombre">Tu nombre</label>
-        <input type="text" id="nombre" placeholder="Nombre Apellido">
-        <br>
-        <br>
-        <label for="email">Tu email</label>
-        <input type="email" id="email" name="email" placeholder="tumail@example.com">
-        <br>
-        <br>
-        <label  for="asunto">Asunto</label>
-        <input type="text" id="asunto" placeholder="Describe en pocas palabras el motivo de tu correo">
-        <br>
-        <br>
-        <label class="write" for="mensaje">Escríbenos:</label>
-        <br>
-        <br>
-        <textarea class="lilbox" name="" id="mensaje" cols="40" rows="20"></textarea>
-        <input type="reset" value="cancelar">
-        <input type="submit" value="enviar">
-    </form>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
 
-    <aside class="aside">
-        <h2>¿Buscas algo en especial?</h2>
-        <form>
-            <input type="text">
-            <input type="submit">
-        </form>
-    </aside>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Ingresa aquí tu mensaje." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-4 text-center">
+                                <div class="d-grid gap-1">
+                                <button class="btn-send btn-primary" type="button">Enviar</button>     
+                                </div>          
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <footer>
+        <div class="footer">
+              <a class="nav-foot active" aria-current="page" href="https://www.instagram.com/bitter.chocolaterie/"><img
+                  src="img/LOGO INSTAGRAM.png" alt="insta"></a>
+           
+              <a class="nav-foot active" aria-current="page"
+                href="https://api.whatsapp.com/send?phone=+56934615121&text=Hola, Nececito mas informacion!"><img
+                  src="img/logo whatsapp.png" alt="contactanos"></a>
+            
+              <a class="nav-foot active" aria-current="page" href=""><img src="img/logo linkedin.png" alt="linkedin"></a>
+            
+          
+        </div>
+      </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
         
