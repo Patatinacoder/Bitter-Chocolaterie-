@@ -375,36 +375,50 @@ border-radius: 20px;
 
 
 /*BREAKPOINTS*/
-/*Index 480*/
-@media screen and (max-width:480px){
-    
-    .presentation img{
-        width: 220;
-    }
-    .text {
-      display: none;
 
 
+/*480*/
 
-    }
+@media screen and (max-width:480px)
+{
+    .navbar-brand{
+        border: 3px solid cadetblue ;
+      margin-bottom: 2% ;
+      margin-left:30%;
 
-    .presentation{
-        block-size: 120px;
-    }
-    
-    .navbar .ref{
-        flex-direction: column;
-    text-align: center;}
-
-.texto h2{
-    font-size: large;
 }
 
-.texto p{
-    font-size: medium;
-}
 
-/*Nosotros 480*/
+}
+/*700*/
+@media screen and (max-width:700px){
+    .navbar-brand{
+        margin-left:38% ;
+
+    
+    }
+
+    .form-control{
+        border: 3px solid cadetblue;
+      
+    }
+
+    .btn{
+        border: 3px solid cadetblue;
+    }
+
+ .card{
+    width: 40%;
+    margin-left: 7%;
+ }
+
+   
+}
+    
+
+    
+   
+/*Nosotros 480
 
 .article h2{
     font-size: large;
@@ -413,62 +427,5 @@ border-radius: 20px;
 
 .article p{
 font-size: 15px;
-}
-
-/*Recomendados 480*/
-.txt{
-    font-size: large;
 
 }
-.txt p{
-    display: none;
-}
-
-.cajas legend{
-    color: rgb(150, 37, 74);
-}
-.cajas label{
-display: grid;
-grid-row: auto;
-}
-
-#send{
-    display: grid;
-    grid-column: auto;
-    padding: 5%;
-    margin-right: 17%;
-}
-
-
-/*Contacto 480*/
-
-.for{
-    font-size: 14px;
-}
-
-.for form{
-    font-size: large;
-}
-.formulario h2{
-    font-size: larger;
-    
-}
-
-/*Shop*/
-.cards{
-    grid-template-columns: 1fr;
-    
-}
-.detalles h2{
-    font-size: larger;
-}
-
-.btn{
-    padding: 1%;
-    margin-bottom: 20px;
-}
-
-}
-    
-  
-
