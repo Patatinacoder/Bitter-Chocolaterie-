@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Romanesco&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #683d4f;
+  border-top: 3px solid cadetblue;
+  border-bottom: 3px solid cadetblue; }
+
+.navbar-brand {
+  color: #f5b4ca;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply; }
+
+.form-control {
+  border: 3px solid cadetblue; }
+
+.carrito {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply; }
+
+.nav-item ul a:hover {
+  transform: scale(1.1);
+  transition: all;
+  cursor: pointer;
+  transition: all 0.80s ease-in-out; }
+
+.footer {
+  border-top: 3px solid cadetblue;
+  border-bottom: 3px solid cadetblue;
+  background-color: #683d4f; }
+
+.nav-foot {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  border: 3px solid cadetblue; }
+
+#navbarSupportedContent ul a {
+  color: #f5b4ca;
+  font-family: "Romanesco";
+  font-size: x-large; }
+
+.bienvenida {
+  color: #6b082e;
+  font-family: "Romanesco";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 3%; }
+
+.tema {
+  color: #702643;
+  font-family: "Romanesco";
+  font-size: 35px;
+  margin-bottom: 2%;
+  text-align: center; }
+
+.details {
+  color: #38282e;
+  width: 50%;
+  font-size: 30px;
+  font-family: "Romanesco";
+  font-weight: bold;
+  font-style: lighter;
+  text-align: center;
+  font-weight: lighter;
+  margin-left: 25.5%;
+  margin-bottom: 2%; }
+
+.article img {
+  border: 3px solid cadetblue;
+  width: 55%;
+  display: grid;
+  grid-column: 1fr;
+  margin-top: 20px;
+  margin-left: 22%; }
+
+.article p {
+  font-family: "Romanesco";
+  font-size: 28px;
+  color: #702643;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.informacion {
+  border: 3px solid #6b082e;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 4%;
+  margin-right: 4%; }
+
+.card-body.g {
+  color: 3px solid #6b082e;
+  font-family: "Romanesco";
+  font-style: lighter; }
+
+.stuff {
+  font-family: "Romanesco";
+  font-size: larger;
+  color: #702643;
+  text-align: center;
+  margin-bottom: 1%; }
+
+.stuff p {
+  font-size: 35px; }
+
+.btn-send {
+  font-family: "Romanesco";
+  color: white; }
+
+.btn {
+  font-size: 16px; }
+
+.rellenar h1 {
+  font-family: "Romanesco";
+  font-size: xx-large;
+  color: #6b082e;
+  margin-top: 2%;
+  text-align: center; }
+
+.container {
+  margin-top: 5%;
+  margin-left: 35%; }
+
+.btn-send {
+  border-radius: 20px;
+  background-color: #96254a;
+  margin-top: 1%;
+  font-family: "Romanesco";
+  color: white;
+  margin-bottom: 5%; }
+
+.formulario h2 {
+  text-align: center;
+  color: #553434; }
+
+.card {
+  border-radius: 30px;
+  background-color: #ffc6e1;
+  font-family: "Romanesco"; }
+
+.collapse {
+  font-family: "Times New Roman", Times, serif; }
+
+.card-title {
+  font-size: xx-large; }
+
+.cardsix {
+  font-size: 18px;
+  color: #6b082e;
+  text-align: center; }
+
+.carousel-caption h5 {
+  font-size: x-large;
+  font-family: "Romanesco";
+  color: black;
+  font-weight: bold; }
+
+.carousel-caption p {
+  font-size: x-large;
+  font-family: "Romanesco";
+  color: black;
+  font-weight: bold; }
+
+.footer {
+  border-top: 3px solid cadetblue;
+  border-bottom: 3px solid cadetblue;
+  background-color: #683d4f;
+  text-align: center; }
+
+.nav-foot {
+  border: 3px solid cadetblue; }
+
+body {
+  background: linear-gradient(80deg, #f5e2ca, #948676); }
+
+.carousel-item {
+  width: 100%; }
+
+.carousel-item img {
+  width: 60%;
+  text-align: center;
+  margin-left: 20%; }
+
+.card {
+  width: 20%;
+  float: left;
+  margin-bottom: 3%;
+  margin-inline-end: 1%;
+  margin-left: 3.5%; }
+
+.btn {
+  background-color: #4e7b8d; }
+
+.btn-send {
+  border-radius: 20px;
+  margin-top: 1%;
+  margin-bottom: 5%; }
+
+.btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  line-height: .95;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+
+.formulario {
+  border: 1px solid #2c1010;
+  margin: 5%;
+  padding: 2%;
+  display: grid;
+  grid-auto-flow: row; }
+
+.animacion {
+  margin-left: 36.5%; }
+
+.cardshop {
+  width: 100%;
+  cursor: pointer; }
+
+.shop {
+  width: 100%; }
+
+.carro {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  border: none; }
+
+.carousel-inner {
+  margin-bottom: 4%; }

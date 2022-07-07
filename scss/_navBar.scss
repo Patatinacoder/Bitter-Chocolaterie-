@@ -1,0 +1,62 @@
+//navBar
+$mainColor: rgb(104, 61, 79);
+$keyColor: rgb(245, 226, 202);
+$borders:3px solid cadetblue;
+$secondaryColor: rgb(245, 180, 202);
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color:$mainColor;
+    border-top:$borders;
+    border-bottom:$borders;
+    }
+
+    .navbar-brand{
+        color:$secondaryColor;
+        filter:brightness(1.1);
+        mix-blend-mode:multiply;
+        
+    }
+
+   .form-control{
+    border: $borders;
+   }
+
+   .carrito{
+   filter: brightness(1.1);
+   mix-blend-mode:multiply;
+   }
+
+
+   
+   .nav-item ul a:hover{
+    transform: scale(1.1);
+    transition: all ;
+    cursor:pointer;
+    transition: all 0.80s ease-in-out;
+ }
+
+
+ //Footer
+ .footer{
+    border-top: $borders;
+    border-bottom:$borders;
+    background-color:$mainColor;
+
+
+}
+.nav-foot{
+    filter: brightness(1.1);
+    mix-blend-mode:multiply;
+    border:$borders;
+}
+
+
+
+
+
+
+

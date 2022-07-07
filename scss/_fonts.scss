@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+//Fonts
+$mainFont:'Romanesco';
+$secondaryFont: 'Times New Roman', Times, serif;
+
+//Sizes
+$textMd:medium;
+$textLr:large;
+$textLar:larger;
+$textLg:x-large;
+$textXl:xx-large;
+$textLit:lighter;
+$textBl:bold;
+$italic:italic;
+
+//Colours
+$titles:rgb(107, 8, 46);
+$subtitles:rgb(112, 38, 67);
+$paragraphs:rgb(56, 40, 46);
+$secondaryColor: rgb(245, 180, 202);
+
+
+//Positions
+$A: center;
+$B: left;
+$C: right;
+
+//Font Styles
+$borders:3px solid cadetblue; 
+$secondborder: 3px solid rgb(107, 8, 46);
+
+
+#navbarSupportedContent{
+
+    ul a{
+color:$secondaryColor;
+font-family: $mainFont;
+font-size: $textLg;
+    }
+}
+
+.bienvenida{
+    color:$titles;
+    font-family: $mainFont;
+    font-size: 50px;
+    text-align:$A;
+    margin-top: 3%;
+    
+}
+
+.tema{
+    color:$subtitles;
+    font-family:$mainFont;
+    font-size:35px;
+    margin-bottom: 2%;
+    text-align: $A;
+
+}
+
+.details{
+    color: $paragraphs;
+    width: 50%;
+    font-size:30px;
+    font-family: $mainFont;
+    font-weight:$textBl;
+    font-style: $textLit;
+    text-align: $A;
+    font-weight: $textLit;
+margin-left: 25.5%;
+margin-bottom: 2%;
+
+}
+
+
+
+
+
+.article img{
+    border:$borders;
+    width: 55%;
+    display: grid;
+    grid-column: 1fr;
+    margin-top: 20px;
+    margin-left: 22%;
+}
+
+
+
+
+.article p{
+font-family:$mainFont;
+font-size: 28px;
+color:$subtitles ;
+text-align: $A;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+
+.informacion{
+border:$secondborder;
+border-radius: 20px;
+margin-top: 2%;
+margin-bottom:2% ;
+margin-left: 4%;
+margin-right: 4%;
+
+}
+
+
+.card-body.g{
+    color: $secondborder;
+    font-family: $mainFont;
+    font-style: $textLit;
+
+}
+
+
+.stuff {
+    font-family: $mainFont;
+    font-size:$textLar;
+    color: $subtitles;
+   text-align: $A;
+    margin-bottom: 1%;
+    
+}
+
+.stuff p{
+font-size: 35px;
+}
+
+.btn-send{
+    font-family: $mainFont;
+    color: white;
+}
+
+.btn{
+    font-size: 16px;
+
+}
+
+//Contacto
+
+.rellenar h1{
+    font-family: $mainFont;
+    font-size:$textXl;
+    color: $titles; 
+    margin-top:2%;
+    text-align: $A;
+
+
+
+}
+
+
+
+
+
+
+.container{
+    margin-top: 5%;
+    margin-left: 35%;
+
+}
+
+.btn-send{
+border-radius: 20px;
+    background-color:rgb(150, 37, 74);
+    margin-top: 1%;
+    font-family: $mainFont;
+    color: white;
+    margin-bottom: 5%;
+}
+
+
+  
+.formulario h2{
+    text-align: $A;
+    color: rgb(85, 52, 52); 
+
+}
+
+
+//Shop
+
+
+
+
+
+.card{
+    border-radius: 30px;
+    background-color: rgb(255, 198, 225);
+font-family: $mainFont;
+}
+
+
+
+
+
+.collapse{
+font-family: $secondaryFont;
+}
+
+
+
+.card-title{
+    font-size: $textXl;
+}
+.cardsix{
+    font-size: 18px;
+    color: $titles;
+    text-align:$A;
+    
+
+}
+
+
+
+
+
+
+.carousel-caption h5{
+    font-size:$textLg;
+    font-family: $mainFont;
+    color: black;
+    font-weight: $textBl;
+}
+
+
+.carousel-caption p{
+    font-size:$textLg;
+    font-family: $mainFont;
+    color:black;
+    font-weight: $textBl;
+   
+
+
+}
+
+//Footer
+.footer{
+border-top: $borders;
+border-bottom:$borders;
+background-color:$mainColor;
+text-align:$A;
+}
+
+.nav-foot{
+   border:$borders ;
+}
