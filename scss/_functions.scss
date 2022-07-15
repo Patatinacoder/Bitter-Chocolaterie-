@@ -2,20 +2,26 @@
 body{
     background: linear-gradient(80deg,rgb(245, 226, 202), rgb(148, 134, 118) );
 }
-.carousel-item{
+
+
+.carousel-item {
     width: 100%;
-    
-    
 
-    }
 
-    .carousel-item img{
+
+}
+
+.carousel-item img {
     width: 60%;
     text-align: center;
     margin-left: 20%;
 
 
-    }
+}
+
+.carousel-inner {
+    margin-bottom: 4%;
+}
 
 
     .card {
@@ -26,10 +32,9 @@ body{
        margin-left: 3.5%;
        }
 
-       .btn {
-        background-color:rgb(78, 123, 141);
+      
 
-       }
+       
     
        .btn-send{
         border-radius: 20px;
@@ -38,7 +43,8 @@ body{
             margin-bottom: 5%;
         }
 
-        .btn{
+
+        .allbtns{
             position: relative;
             z-index: 1;
             display: inline-block;
@@ -52,7 +58,12 @@ body{
             border-radius: 20px;
             overflow:hidden;
             margin-bottom: 20px;
+            background-color: rgb(211, 162, 186);
         }
+        
+    .btn{
+        @extend .allbtns
+    }
         
         
         .formulario{
@@ -93,3 +104,109 @@ margin-left: 36.5%;
 .carousel-inner{
     margin-bottom: 4%;
 }
+
+
+
+//mixin media
+$breakpointXS: 360px;
+$breakpointSM: 767px;
+$breakpointMD: 1023px;
+$breakpointLG: 1360px;
+
+
+@mixin media ($media) {
+  @if $media == xs{
+    @media (max-width: $breakpointXS) {@content;}
+  }
+    
+
+
+@else if $media == sm{
+    @media (min-width:$breakpointXS) and (max-width: $breakpointSM) {@content;}
+
+}
+
+@else if $media == md {
+    @media (min-width:$breakpointSM) and (max-width: $breakpointMD) {@content;}
+
+}
+
+@else if $media == lg{
+    @media (min-width:$breakpointMD)and (max-width:$breakpointLG){@content;}
+}
+
+
+}
+//media
+.details{
+    @include media (xs){
+        width: 80%;
+        font-size: 25px;
+        margin-left: 33px;
+        margin-bottom: 2%;
+    }
+    @include media(sm){
+        width: 80%;
+        font-size: 30px;
+        margin-left: 65px;
+        margin-bottom: 2%;
+    }
+}
+.informacion{
+@include media(xs){
+
+    width: 80%;
+    font-size: 25px;
+    margin-left: 33px;
+    margin-bottom: 2%;
+}
+
+}
+
+.card{
+  @include media(xs){
+  margin-right: 5%;
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 3%;
+  
+
+    }
+
+    @include media(sm){
+        margin-right: 5%;
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 3%;
+}
+
+@include media(md){
+    width: 40%;
+    margin-left: 5.5%;
+    margin-right: 3%;
+}
+
+}
+
+.cardshop{
+    @include media(xs){
+        width: 80%;
+margin-left: 10%;    }
+
+@include media (md){
+    width: 90%;
+    margin-left: 8%;
+
+}
+}
+
+
+
+
+
+.row{
+@include media(xs){
+   padding: 20%;
+}
+}
+

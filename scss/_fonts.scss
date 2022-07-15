@@ -18,6 +18,8 @@ $titles:rgb(107, 8, 46);
 $subtitles:rgb(112, 38, 67);
 $paragraphs:rgb(56, 40, 46);
 $secondaryColor: rgb(245, 180, 202);
+$ducky:rgb(220, 255, 93);
+$gray:gray;
 
 
 //Positions
@@ -30,6 +32,20 @@ $borders:3px solid cadetblue;
 $secondborder: 3px solid rgb(107, 8, 46);
 
 
+
+.titulos{
+ font-size:40px;  
+ font-family:$mainFont;
+ color: $titles;
+ text-align: $A;
+ margin-bottom: 2%;
+
+}
+
+.bienvenida{
+    @extend .titulos
+}
+
 #navbarSupportedContent{
 
     ul a{
@@ -39,14 +55,8 @@ font-size: $textLg;
     }
 }
 
-.bienvenida{
-    color:$titles;
-    font-family: $mainFont;
-    font-size: 50px;
-    text-align:$A;
-    margin-top: 3%;
-    
-}
+
+
 
 .tema{
     color:$subtitles;
@@ -56,22 +66,21 @@ font-size: $textLg;
     text-align: $A;
 
 }
-
 .details{
-    color: $paragraphs;
-    width: 50%;
-    font-size:30px;
-    font-family: $mainFont;
-    font-weight:$textBl;
-    font-style: $textLit;
-    text-align: $A;
-    font-weight: $textLit;
+width: 50%;
+font-size:30px;
+text-align: $A;
 margin-left: 25.5%;
 margin-bottom: 2%;
-
 }
 
 
+.informacion{
+    @extend .details;
+    border: 2px solid $titles ;
+    margin-top: 2%;
+    border-radius: 5%;
+}
 
 
 
@@ -98,15 +107,7 @@ text-align: $A;
 
 }
 
-.informacion{
-border:$secondborder;
-border-radius: 20px;
-margin-top: 2%;
-margin-bottom:2% ;
-margin-left: 4%;
-margin-right: 4%;
 
-}
 
 
 .card-body.g{
@@ -142,11 +143,11 @@ font-size: 35px;
 
 //Contacto
 
-.rellenar h1{
+.rellenar {
     font-family: $mainFont;
     font-size:$textXl;
     color: $titles; 
-    margin-top:2%;
+    margin-bottom: 2%;
     text-align: $A;
 
 
@@ -200,6 +201,8 @@ font-family: $mainFont;
 
 .collapse{
 font-family: $secondaryFont;
+color: $titles;
+font-size: $textLg;
 }
 
 
@@ -218,25 +221,29 @@ font-family: $secondaryFont;
 
 
 
+.carousel{
+    font-size:$textLg;
+    font-family: $mainFont;
+color: $ducky;   
+ font-weight: $textLit;
 
+}
 
 .carousel-caption h5{
-    font-size:$textLg;
-    font-family: $mainFont;
-    color: black;
-    font-weight: $textBl;
+    @extend .carousel
 }
 
-
-.carousel-caption p{
+.carousel-a{
     font-size:$textLg;
     font-family: $mainFont;
-    color:black;
-    font-weight: $textBl;
-   
-
+    color:$ducky;
+    font-weight: $textLit;
 
 }
+
+   .carousel-caption p{
+    @extend .carousel-a
+   }
 
 //Footer
 .footer{
@@ -248,4 +255,14 @@ text-align:$A;
 
 .nav-foot{
    border:$borders ;
+}
+
+@mixin parrafo($color, $size, $family, ){
+    color:$color;
+    font-size: $size;
+    font-family: $family;
+}
+
+.details{
+    @include parrafo ($paragraphs, $textBl, $mainFont )
 }
